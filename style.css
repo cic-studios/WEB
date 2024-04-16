@@ -1,0 +1,216 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    /*border-width: 2px;
+    border-style: inset;
+    border-color: black;*/
+    /*background-color: darkslateblue;*/
+    /*color: antiquewhite;*/
+    font-family: sans-serif;
+}
+body
+{
+    position: relative;
+    background-color:rgb(23,31,39);
+    background-image: url(Images/CIC%20Games%20Background%20Cat2.png); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    background-size: cover;
+    min-height: 100vh;
+    /*min-width: 100vw;*/
+}
+p
+{
+    color:antiquewhite; 
+}
+h1
+{
+    color:antiquewhite; 
+}
+h2
+{
+    color:antiquewhite; 
+}
+h3
+{
+    color:antiquewhite; 
+}
+
+#p1
+{
+    /*position: relative;*/
+    top:100px;
+    color: black;
+    background-color: red;
+}
+
+/*.Container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100vh;
+    /*background-color: rgba(255, 228, 196, 0.5);
+    /*overflow:hidden;
+}*/
+.BotBanner
+{
+    height: 12px;
+    padding: 4px 0px;
+}
+.BotBannerContent
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color:rgba(23,31,39, 0.75);
+    position: fixed;
+    font-size: 12px;
+    z-index: 999;
+}
+.BotBannerFlexFiller
+{
+    background-color:rgba(23,31,39, 0);
+}
+
+.TopBanner
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-start;
+    position:sticky;
+    top:0;
+    width:100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    z-index: 999;
+}
+.TopBannerSection
+{
+    flex-grow: 1;
+    display:flex;
+    height:34px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.TopBannerSectionTitle
+{
+    display: flex; 
+    height: 14px;
+    min-height: 14px;
+    justify-content: center; 
+    align-items: center;
+    color: aliceblue;
+    text-shadow: 0px 0px 5px cyan;
+    background-color: rgba(23,31,39,0.9);
+    font-size: 12px;
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+    border-color: cyan;
+}
+.TopBannerSectionContent
+{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background:linear-gradient(to bottom, rgba(23,31,39,0.9) 25%, rgba(23,31,39,0.0) 99%);
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+    border-image: linear-gradient(to bottom, rgba(0,255,255,1) 5%, rgba(0,255,255,0.0) 75%) 1 ;
+    /*background-color: rgba(23,31,39,0.75);*/
+    /*align-content:center;*/
+}
+
+#CICHomeImg
+{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    /*width:34px;*/
+    height: 34px;
+}
+
+.TopMenuItem
+{
+    /*flex-grow: 1;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    /*list-style: none;
+    display: inline-block;
+    margin: 0 10px;*/
+    /*background-color: red;*/
+    position: relative;
+}
+.TopMenuItem::after
+{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: aliceblue;
+    box-shadow: 0px 0px 5px cyan;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.TopMenuItem:hover::after
+{
+    width: 100%;
+}
+
+.TopMenuIcon
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    position:relative;
+    top: 0px;
+    /*height: 30px;
+    width: 30px;*/
+    font-size: 20px;
+    cursor: pointer;
+    text-shadow: 0px 0px 2px black;
+    transition: 0.5s;
+}
+.TopMenuIcon:hover
+{
+    top: 2px;
+    text-shadow: 0px 0px 3px cyan;
+}
+
+.TopMenuText
+{
+    position:relative;
+    top: 0px;
+    text-decoration: none;
+    color: aliceblue;
+    text-shadow: 0px 0px 5px cyan;
+    font-size: 14px;
+    transition: 0.5s;
+}
+.TopMenuText:hover
+{
+    color: white;
+    top: 2px;
+}
